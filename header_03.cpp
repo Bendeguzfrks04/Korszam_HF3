@@ -2,8 +2,7 @@
 //  heörmeör.hpp
 //  korszám_HF3
 //
-//  Created by Farkas Bende on 2021. 04. 15..
-//
+//  Created on 2021. 04. 15..
 
 #ifndef heormeor_hpp
 #define heormeor_hpp

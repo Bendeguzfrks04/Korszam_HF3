@@ -10,7 +10,7 @@
 
 #include <stdio.h>
 #include <math.h>
-#endif /* heormeor_hpp */
+
 
 using namespace std;
 
@@ -25,10 +25,7 @@ private:
     
 public:
     //main (hiperbolic) function
-    double fun(double x)
-    {
-        return F/q * (cosh(q/F *x) - cosh((q*a)/(2*F)))+y_shift;
-    }
+    double fun(double x){return F/q * (cosh(q/F *x) - cosh((q*a)/(2*F)))+y_shift;}
     
     // Richardson_2th
     template<typename T>
@@ -96,17 +93,16 @@ public:
         for(int i=1; i<n; i++){
             sum_i += dfd.len(a + 2*i*dx);
           }
-        sum_i *= 2;
         
         //paratlan iteracio
         for(int j=2; j<n-1; j++){
             sum_j += dfd.len(a + (2*j-1)*dx);
           }
-        sum_j *= 4;
         
-        T susol = (dx/3)*(dfd.len(a) + sum_i + sum_j + dfd.len(b));
+        T susol = (dx/3)*(dfd.len(a) + 2*sum_i + 4*sum_j + dfd.len(b));
         return  susol;
     }
     
 };
 
+#endif /* heormeor_hpp */

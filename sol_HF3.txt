@@ -1,3 +1,3 @@
-Integral közelítése középpontos módszerrel: 206.984,
-Integral közelítése trapéz-szabállyal: 205.945,
-Integral közelítése Simpson (1/3)-szabállyal: 201.351
+Az integrál közelítése középpontos módszerrel: 206.984,
+Az integrál közelítése trapéz-szabállyal: 205.945,
+Az integrál közelítése Simpson (1/3)-szabállyal: 201.351

@@ -21,7 +21,7 @@ int main()
     cout << "Integral közelítése Simpson (1/3)-szabállyal: " << dx.simpint<double>(4) << endl;
      */
 
-    ofstream ofile("/Users/farkasbende/Desktop/Korszám 1/korszám_HF3/korszám_HF3/sol_HF3.txt");
+    ofstream ofile("sol_HF3.txt");
     /* Én Xcode-ban dolgozok és itt ide kellett irni a teljes path-ot ("/Users/Desktop/.../sol_HF3.txt"),
     de most csak a txt nevét hagyom benn. (ha esetleg nem tudná megnyitni a fájlt) */
     if(ofile.is_open())
